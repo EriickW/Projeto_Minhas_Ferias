@@ -36,11 +36,11 @@ Integrante 2 - 2022.2 : Erick Willian Soares Afonso | RGM: 31209521
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Cor Blob      | ![#D9043D](https://via.placeholder.com/10/D9043D?text=+) #D9043D |
-| Cor dos titulos       | ![#382F73](https://via.placeholder.com/10/382F73?text=+) #382F73 |
-| Cor Blob       | ![#2E97F2](https://via.placeholder.com/10/2E97F2?text=+) #2E97F2 |
-| Cor Blob       | ![#03A6A6](https://via.placeholder.com/10/03A6A6?text=+) #03A6A6 |
-| Cor Botão Enviar      | ![#9EEFB0](https://via.placeholder.com/10/9EEFB0?text=+) #9EEFB0 |
+| Cor Blob      |<p style="color:#D9043D">#D9043D</p>|
+| Cor dos titulos       | <p style="color:#382F73"> #382F73</p>  |
+| Cor Blob       |<p style="color:#2E97F2">#2E97F2</p> |
+| Cor Blob       | <p style="color:#03A6A6">#03A6A6</p>|
+| Cor Botão Enviar      | <p style="color:#9EEFB0 ">#9EEFB0 </p>|
 
 <br>
 
@@ -49,8 +49,12 @@ Integrante 2 - 2022.2 : Erick Willian Soares Afonso | RGM: 31209521
 
 
 
+<div align="center" >
+
 ### ***Desktop:***
 
-<img align="center" src="./src/img/screenshot/Desktop.png" >
+<img src="./src/img/screenshot/Desktop.png" >
+
+</div>
 
     
