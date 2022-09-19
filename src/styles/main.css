@@ -15,6 +15,7 @@
 :root {
   --cor-destaque-text:#382F73;
   --cor-destaque-button:#382F73;
+  --cor-destaque1:#382F73;
   --font:Kabouter , cursive;
 }
 
@@ -149,21 +150,21 @@ header .arrow {
   background: #2E97F2;
 }
 
-main h1 {
+.main-inicio h1 {
   font-size: 70px;
 }
 
-main h2 {
+.main-inicio h2 {
   font-size: 40px;
 }
 
-main h1, main h2 {
+.main-inicio h1, .main-inicio h2 {
   font-family: var(--font);
   color: var(--cor-destaque-text);
   font-weight: 700;
 }
 
-main #mic {
+.main-inicio #mic {
   background: #ff7676;
   color: white;
   width: 80px;
@@ -175,17 +176,42 @@ main #mic {
   transition: all 0.3s ease-in-out;
 }
 
-main #mic:hover {
+.main-inicio #mic:hover {
   background: #f11f1f;
 }
 
-main .comecar-content {
+.main-inicio .comecar-content {
   z-index: 2;
   max-width: 500px;
 }
 
-main a {
+.main-inicio a {
   cursor: pointer;
+}
+
+.img-login img {
+  width: 70%;
+}
+
+#form-content h1 {
+  font-size: 60px;
+  font-family: var(--font);
+  color: var(--cor-destaque-text);
+  font-weight: 700;
+}
+
+#form-content form input {
+  width: 400px;
+  height: 40px;
+  padding-inline: 20px;
+  border: 1px solid var(--cor-destaque1);
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+#form-content form #submit {
+  background: var(--cor-destaque1);
+  color: white;
 }
 
 body {

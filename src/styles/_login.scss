@@ -1,0 +1,29 @@
+.img-login{
+    img{
+        width: 70%;
+    }
+}
+#form-content{
+
+    h1{
+        font-size: 60px;
+        font-family: var(--font);
+        color: var(--cor-destaque-text);
+        font-weight: 700;
+    }
+    form{
+    
+        input{
+            width: 400px;
+            height: 40px;
+            padding-inline:20px;
+            border:1px solid var(--cor-destaque1);
+            margin-top: 10px;
+            border-radius: 50px;
+        }
+        #submit{
+            background: var(--cor-destaque1);
+            color: white;
+        }
+    }
+}

@@ -14,7 +14,7 @@
 <body onload="verificar()" id="redacoes"class="light-theme">
     <!-- ========================== NAV ======================== -->
     <?php
-    include("../components/nav.php")
+    include("../components/navAreaProf.php")
     ?>
 
 
