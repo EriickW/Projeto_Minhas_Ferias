@@ -7,7 +7,7 @@ Integrante 2 - 2022.2 : Erick Willian Soares Afonso | RGM: 31209521
 
 Empresa: FishTechnology
 
-Lider da Empresa: Lambarildo Peixe
+Lider da Empresa: Erick Willian
 
 
 ## Dados do Cliente (Escola)
