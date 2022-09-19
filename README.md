@@ -62,4 +62,10 @@ Lider da Empresa: Lambarildo Peixe
 
 </div>
 
+
+## Links uteis
+
+- [Capturando Microfone no Navegador](https://www.youtube.com/watch?v=80giIJkO5V8)
+
+- [Convertendo canvas em JPG](https://www.youtube.com/watch?v=YoVJWZrS2WU)
     

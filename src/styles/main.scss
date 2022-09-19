@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Kabouter";
+    src: url(../fonts/Kabouter.otf);
+ }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    
+}
+:root{
+    --cor-destaque-text:#382F73;
+    --cor-destaque-button:#382F73;
+    --font:Kabouter , cursive;
+}
+p{
+    font-family: 'Poppins', cursive;
+}
+body{
+  
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
+@import "navInicial";
+@import "PGInicial";
+@import "main-inicial";
+@import "login";
+@import "professorarea";
