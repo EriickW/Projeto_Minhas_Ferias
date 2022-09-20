@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Kabouter";
-  src: url(../fonts/Kabouter.otf);
+  src: url(fonts/Kabouter.otf);
 }
 
 * {
@@ -189,18 +189,45 @@ header .arrow {
   cursor: pointer;
 }
 
-.img-login img {
+#login {
+  min-height: 100vh;
+  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#login main {
+  min-height: 100vh;
+  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#login .img-login {
+  height: 100%;
+}
+
+#login .img-login img {
   width: 70%;
 }
 
-#form-content h1 {
+#login #form-content h1 {
   font-size: 60px;
   font-family: var(--font);
   color: var(--cor-destaque-text);
   font-weight: 700;
 }
 
-#form-content form input {
+#login #form-content form input {
   width: 400px;
   height: 40px;
   padding-inline: 20px;
@@ -209,21 +236,17 @@ header .arrow {
   border-radius: 50px;
 }
 
-#form-content form #submit {
+#login #form-content form #submit {
   background: var(--cor-destaque1);
   color: white;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background: var(--fundo);
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .light-theme {
   --fundo:rgb(255, 255, 255);
   --aside:#E0E2E3;
-  --destaque:#c28ff1;
+  --destaque:var(--cor-destaque-text);
   --font:#131313;
   --font-ativa:white;
   --color-border:black;
@@ -238,15 +261,44 @@ body {
   --color-border:#a5112a;
 }
 
-.active {
+.light-theme .main-tutorial-content .tutorial .box {
+  border-radius: 5px;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 10px 20px #d9d9d97a, -10px -10px 20px #ffffff;
+          box-shadow: 10px 10px 20px #d9d9d97a, -10px -10px 20px #ffffff;
+}
+
+.dark-theme .main-tutorial-content .tutorial .box {
+  border-radius: 5px;
+  background: #131313;
+  -webkit-box-shadow: 10px 10px 20px #101010, -10px -10px 20px #161616;
+          box-shadow: 10px 10px 20px #101010, -10px -10px 20px #161616;
+}
+
+#areaProfessor {
+  width: 100%;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  background: var(--fundo);
+  /* ============= */
+  /* -===================== */
+  /* ============================ Main ============================== */
+}
+
+#areaProfessor #main-area-professor h1, #areaProfessor #main-area-professor h2, #areaProfessor #main-area-professor h3, #areaProfessor #main-area-professor h4 {
+  font-family: "Kabouter",cursive;
+  color: var(--destaque);
+}
+
+#areaProfessor .active {
   --tamanho-aside:200px;
 }
 
-.disable {
+#areaProfessor .disable {
   --tamanho-aside:70px;
 }
 
-.navBody {
+#areaProfessor .navBody {
   position: fixed;
   z-index: 3;
   height: 50px;
@@ -269,15 +321,15 @@ body {
   border-top: none;
 }
 
-h1, h2, h2, p, a, ion-icon {
+#areaProfessor p, #areaProfessor a, #areaProfessor ion-icon {
   color: var(--font);
 }
 
-/* ============= */
-aside.active {
+#areaProfessor aside.active {
   position: fixed;
   background: var(--aside);
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: var(--tamanho-aside);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,16 +349,16 @@ aside.active {
   border: solid 2px var(--color-border);
   border-left: none;
   border-top: none;
+  border-bottom: none;
   z-index: 2;
 }
 
-/* -===================== */
-aside.active .icon {
+#areaProfessor aside.active .icon {
   width: 20px;
   height: 20px;
 }
 
-aside.active .menu {
+#areaProfessor aside.active .menu {
   margin-top: 50px;
   height: 40px;
   border-radius: 50%;
@@ -314,7 +366,7 @@ aside.active .menu {
   background: #000;
 }
 
-aside.active .aside-content {
+#areaProfessor aside.active .aside-content {
   width: 100%;
   height: 100%;
   position: relative;
@@ -335,12 +387,12 @@ aside.active .aside-content {
   margin-top: 20px;
 }
 
-aside.active nav {
+#areaProfessor aside.active nav {
   width: var(--tamanho-aside);
   margin-top: 60px;
 }
 
-aside.active nav ul {
+#areaProfessor aside.active nav ul {
   width: 100%;
   list-style: none;
   display: -webkit-box;
@@ -359,7 +411,7 @@ aside.active nav ul {
   gap: 40px;
 }
 
-aside.active nav ul li {
+#areaProfessor aside.active nav ul li {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,7 +424,7 @@ aside.active nav ul li {
           justify-content: flex-start;
 }
 
-aside.active nav ul li a, #trocarTema {
+#areaProfessor aside.active nav ul li a, #areaProfessor #trocarTema {
   text-decoration: none;
   color: var(--font);
   cursor: pointer;
@@ -387,22 +439,22 @@ aside.active nav ul li a, #trocarTema {
           justify-content: flex-start;
 }
 
-aside.active nav ul li .icon {
+#areaProfessor aside.active nav ul li .icon {
   margin-inline: 20px;
 }
 
-aside.active nav ul .ativa {
+#areaProfessor aside.active nav ul .ativa {
   width: 95%;
   background: var(--destaque);
   padding-block: 7px;
   border-radius: 0px 30px 30px 0px;
 }
 
-aside.active nav ul .ativa a {
-  color: var(--font);
+#areaProfessor aside.active nav ul .ativa a {
+  color: white;
 }
 
-#sair {
+#areaProfessor #sair {
   position: absolute;
   bottom: 50px;
   color: var(--font);
@@ -412,7 +464,7 @@ aside.active nav ul .ativa a {
   gap: 10px;
 }
 
-.menu {
+#areaProfessor .menu {
   width: 30px;
   height: 30px;
   display: none;
@@ -422,98 +474,28 @@ aside.active nav ul .ativa a {
 }
 
 @media (max-width: 1300px) {
-  aside.active {
+  #areaProfessor aside.active {
     display: none;
   }
-  .menu {
+  #areaProfessor .menu {
     display: block;
   }
-  #search {
+  #areaProfessor #search {
     display: none;
   }
 }
 
-.menu-aberto {
-  position: absolute;
-  background: var(--aside);
+@media (max-width: 1300px) {
+  #areaProfessor main .main-tutorial-content .tutorial {
+    margin-top: 50px;
+  }
 }
 
-.menu-aberto aside {
-  display: block;
-  z-index: 5;
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.menu-aberto main {
-  display: none;
-}
-
-.menu-aberto .navBody {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 9;
-}
-
-.menu-aberto aside.active nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-.menu-aberto aside.active nav ul {
-  font-size: 20px;
-  z-index: 10;
-}
-
-.menu-aberto aside.active nav ul .ativa {
-  width: 100%;
-  background: var(--destaque);
-  padding-block: 7px;
-  border-radius: 30px;
-}
-
-.menu-aberto .navBody .menu {
-  display: block;
-}
-
-/* ============================ Main ============================== */
-main {
-  position: absolute;
+#areaProfessor main {
+  position: relative;
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   margin-inline: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,10 +513,12 @@ main {
   right: 0;
 }
 
-main .main-tutorial-content {
+#areaProfessor main .main-tutorial-content {
   position: relative;
   margin-top: 70px;
   width: 100%;
+  min-height: 100vh;
+  height: 100%;
   margin-inline: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,16 +535,20 @@ main .main-tutorial-content {
           flex-direction: column;
 }
 
-main .main-tutorial-content h2 {
+#areaProfessor main .main-tutorial-content h2 {
   text-align: center;
-  color: var(--font);
+  position: absolute;
+  top: 150px;
+  color: var(--destaque);
   font-size: 45px;
   font-weight: 700;
   max-width: 100%;
 }
 
-main .main-tutorial-content .tutorial {
-  min-height: 400px;
+#areaProfessor main .main-tutorial-content .tutorial {
+  background: #000;
+  position: relative;
+  min-height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,7 +564,7 @@ main .main-tutorial-content .tutorial {
       flex-wrap: wrap;
 }
 
-.main-tutorial-content .tutorial .box {
+#areaProfessor .main-tutorial-content .tutorial .box {
   position: relative;
   color: var(--font);
   max-width: 300px;
@@ -598,31 +586,17 @@ main .main-tutorial-content .tutorial {
   z-index: 1;
 }
 
-.light-theme .main-tutorial-content .tutorial .box {
-  border-radius: 5px;
-  background: #ffffff;
-  -webkit-box-shadow: 10px 10px 20px #d9d9d97a, -10px -10px 20px #ffffff;
-          box-shadow: 10px 10px 20px #d9d9d97a, -10px -10px 20px #ffffff;
-}
-
-.dark-theme .main-tutorial-content .tutorial .box {
-  border-radius: 5px;
-  background: #131313;
-  -webkit-box-shadow: 10px 10px 20px #101010, -10px -10px 20px #161616;
-          box-shadow: 10px 10px 20px #101010, -10px -10px 20px #161616;
-}
-
-.main-tutorial-content .tutorial .box .text-hover {
+#areaProfessor .main-tutorial-content .tutorial .box .text-hover {
   padding: 10px;
   position: absolute;
   opacity: 0;
 }
 
-.main-tutorial-content .tutorial .box.ativa .text-hover {
+#areaProfessor .main-tutorial-content .tutorial .box.ativa .text-hover {
   opacity: 1;
 }
 
-.main-tutorial-content .tutorial .box h4 {
+#areaProfessor .main-tutorial-content .tutorial .box h4 {
   width: 100%;
   height: 100%;
   font-size: 35px;
@@ -630,11 +604,11 @@ main .main-tutorial-content .tutorial {
   opacity: 1;
 }
 
-.main-tutorial-content .tutorial .box.ativa h4 {
+#areaProfessor .main-tutorial-content .tutorial .box.ativa h4 {
   opacity: 0;
 }
 
-.aplicacao {
+#areaProfessor .aplicacao {
   max-width: 400px;
   width: 100%;
   text-align: justify;
@@ -652,5 +626,77 @@ main .main-tutorial-content .tutorial {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-inline: auto;
+}
+
+#areaProfessor.menu-aberto {
+  position: absolute;
+  background: var(--aside);
+}
+
+#areaProfessor.menu-aberto aside {
+  display: block;
+  z-index: 5;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#areaProfessor.menu-aberto main {
+  display: none;
+}
+
+#areaProfessor.menu-aberto .navBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 9;
+}
+
+#areaProfessor.menu-aberto aside.active nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#areaProfessor.menu-aberto aside.active nav ul {
+  text-align: center;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#areaProfessor.menu-aberto aside.active nav ul .ativa {
+  width: 100%;
+  background: var(--destaque);
+  padding-block: 7px;
+  border-radius: 30px;
+}
+
+#areaProfessor.menu-aberto .navBody .menu {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

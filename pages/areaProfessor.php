@@ -26,10 +26,11 @@
     include("../components/aside.php")
     ?>
 
-    <main>  
+    <main id="main-area-professor">  
         <section class="main-tutorial-content">
-           <h2 >Tutorial da Plataforma</h2>
+       
            <div class="tutorial">
+           <h2 >Tutorial da Plataforma</h2>
                 <div class="box">
                     <h4>Aba de redações</h4>
                     <div class="text-hover">
