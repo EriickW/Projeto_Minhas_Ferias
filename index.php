@@ -30,7 +30,7 @@
 
     <title>Redação Kids</title>
   </head>
-  <body role="body">
+  <body role="body" id="index">
    
     <?php
     include("components/nav.php");
@@ -63,10 +63,10 @@
        
         <section class="container d-flex align-items-center justify-content-between flex-column mt-5">
          
-          <canvas width="100%"  class="container bg-black" >
+          <canvas width="100%"  class="container " border="10px" >
 
           </canvas>
-          <input type="submit" class="mt-5">
+          <button type="submit" class="mt-5 btn-generic" >Enviar</buttom>
           
         </section>
     </main>

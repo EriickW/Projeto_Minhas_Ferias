@@ -79,32 +79,7 @@ nav #nav-content ul li a:hover {
   border-bottom: 1px solid var(--cor-destaque-text);
 }
 
-header {
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-
-header .header-content {
-  max-width: 500px;
-  width: 100%;
-}
-
-header .header-content h1 {
-  font-size: 70px;
-}
-
-header .header-content h2 {
-  font-size: 40px;
-}
-
-header .header-content h1, header .header-content h2 {
-  font-family: var(--font);
-  color: var(--cor-destaque-text);
-  font-weight: 700;
-}
-
-header .header-content .btn-generic {
+#index .btn-generic {
   background: transparent;
   padding: 5px 30px;
   border: 2px solid var(--cor-destaque-button);
@@ -115,12 +90,37 @@ header .header-content .btn-generic {
   transition: all 0.5s ease-in-out;
 }
 
-header .header-content .btn-generic:hover {
+#index .btn-generic:hover {
   background: var(--cor-destaque-button);
   color: white;
 }
 
-header .arrow {
+#index header {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+#index header .header-content {
+  max-width: 500px;
+  width: 100%;
+}
+
+#index header .header-content h1 {
+  font-size: 70px;
+}
+
+#index header .header-content h2 {
+  font-size: 40px;
+}
+
+#index header .header-content h1, #index header .header-content h2 {
+  font-family: var(--font);
+  color: var(--cor-destaque-text);
+  font-weight: 700;
+}
+
+#index header .arrow {
   position: absolute;
   width: 270px;
   text-align: center;
@@ -129,7 +129,7 @@ header .arrow {
   bottom: 50px;
 }
 
-.forma {
+#index .forma {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -138,16 +138,20 @@ header .arrow {
   overflow: hidden;
 }
 
-.forma-top {
+#index .forma-top {
   top: -150px;
   left: -250px;
   background: #D9043D;
 }
 
-.forma-bot {
+#index .forma-bot {
   bottom: -40px;
   right: -250px;
   background: #2E97F2;
+}
+
+#index canvas {
+  border: 1px solid black;
 }
 
 .main-inicio h1 {
