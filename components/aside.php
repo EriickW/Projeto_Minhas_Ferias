@@ -11,7 +11,7 @@
                 </ul>
             </nav>
 
-            <a href="../pages/login.php" id="sair"><ion-icon name="exit" class="icon"></ion-icon>Sair</a>
+            <a href="../pages/logout.php" id="sair"><ion-icon name="exit" class="icon"></ion-icon>Sair</a>
             
         </div>
 

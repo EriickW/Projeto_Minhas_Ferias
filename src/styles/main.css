@@ -247,6 +247,12 @@ nav #nav-content ul li a:hover {
   margin-bottom: 20px;
 }
 
+@media (max-width: 770px) {
+  #login img {
+    display: none;
+  }
+}
+
 .light-theme {
   --fundo:rgb(255, 255, 255);
   --aside:#E0E2E3;
@@ -550,7 +556,7 @@ nav #nav-content ul li a:hover {
 }
 
 #areaProfessor main .main-tutorial-content .tutorial {
-  background: #000;
+  background: white;
   position: relative;
   min-height: 100%;
   width: 100%;

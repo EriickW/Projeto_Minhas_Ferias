@@ -1,4 +1,6 @@
-
+<?php 
+include('../src/db/protect.php');
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -1,3 +1,45 @@
+<?php
+
+    include('../src/db/connect.php');
+
+
+    if(isset($_POST['email']) || isset($_POST['senha'])){
+        if(strlen($_POST['email'])== 0 ){
+            echo 'Preencha seu email';
+        }else if(strlen($_POST['senha'])== 0 ){
+            echo 'Preencha sua senha';
+        }else{
+
+            $email = $mysqli->real_escape_string($_POST['email']);
+            $senha = $mysqli->real_escape_string($_POST['senha']);
+
+            $sql_code = "SELECT * FROM professores WHERE email = '$email' AND senha = '$senha'";
+
+            $sql_query = $mysqli->query($sql_code) or die("Falha na execução SQL ").$mysqli->error;
+
+            $quantidades = $sql_query->num_rows;
+
+            if($quantidades == 1){
+                $user = $sql_query->fetch_assoc();
+
+                if(!isset($_SESSION)){
+                    session_start();
+                }
+
+                $_SESSION['id']= $user['id'];
+                $_SESSION['nome']= $user['nome'];
+
+                header("Location: areaProfessor.php");
+
+            }else{
+                echo "Falha ao logar! E-mail ou senha incorretos";
+            }
+
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,14 +60,14 @@
     ?>
     <main class="container-fluid text-center row">
         <section class="row">
-            <div class="col img-login">
+            <div class="col-md img-login">
                 <img src="../src/img/test.svg" alt="">
             </div>
-            <div id="form-content" class="col">
+            <div id="form-content" class="col-md">
                 <h1>Olá Professor</h1>
-                <form action="./areaProfessor.php" method="post">
+                <form action="" method="post">
                     <div>
-                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div>
                         <input type="password" id="senha" name="senha" placeholder="Senha" required>
