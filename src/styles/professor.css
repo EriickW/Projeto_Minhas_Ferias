@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Kabouter";
+    src: url(fonts/Kabouter.otf);
+ }
+
+body{
+    height: 100vh;
+}
+body h1,h2,h3,h4,h5{
+    font-family: "Kabouter",cursive;
+    color:var(--cor-destaque);
+}
+.light{
+    --aside:rgb(230, 230, 230);
+    --cor-destaque:#382F73;
+    
+}
+main{
+
+}
+body #aside-content{
+    height: 100%;
+    background: var(--aside);
+
+}
+body .text{
+    z-index: 2;
+}
+  .blob-top{
+    right:-10px;
+    bottom: 0;
+    z-index: -2;
+    width: 1000px;
+}
+#sair{
+    margin-top:100px;
+
+}
