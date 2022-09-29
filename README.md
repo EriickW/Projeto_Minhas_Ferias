@@ -10,7 +10,7 @@ Empresa: FishTechnology
 Lider da Empresa: Erick Willian
 
 
-## Dados do Cliente (Escola)
+## Dados do Cliente (Escola).
 
 - **Nome da Escola** : Colégio Mello Dante
 - **Contato Direto** : 
