@@ -1,42 +1,27 @@
-const changeTheme = document.querySelector("#trocarTema");
-const  body = document.querySelector("body");
-const box = document.querySelector(".box");
-const box0 = document.querySelector(".box0");
-const box1= document.querySelector(".box1");
-const menu = document.querySelector(".menu");
-const redacao =document.querySelector("#redacoes");
+const box0 = document.querySelector(".b0");
+const box1 = document.querySelector(".b1");
+const box2 = document.querySelector(".b2");
+
+box0.addEventListener("mouseenter",()=>{
+    box0.classList.toggle("ativa");
+});
+box1.addEventListener("mouseenter",()=>{
+    box1.classList.toggle("ativa");
+});
+box2.addEventListener("mouseenter",()=>{
+    box2.classList.toggle("ativa");
+});
 
 
-menu.addEventListener("click", ()=>{
-    
-        body.classList.toggle("menu-aberto");
-        if(menu.getAttribute("name") == "menu" ){
-            menu.removeAttribute("name","menu")
-            menu.setAttribute("name","close")
-        }else{
-           
-            menu.setAttribute("name","menu")
-        }
-       
-        
 
-})
 
-changeTheme.addEventListener("click", ()=>{
-    body.classList.toggle("light-theme");
-    body.classList.toggle("dark-theme");
-})
+function _(selector){
+    return document.querySelector(selector);
+}
 
-box.addEventListener("mouseenter",(event)=>{
-     box.classList.toggle("ativa")
-    console.log("ssss")
-})
-box0.addEventListener("mouseenter",(event)=>{
-     box0.classList.toggle("ativa")
-    console.log("ssss")
-})
-box1.addEventListener("mouseenter",(event)=>{
-     box1.classList.toggle("ativa")
-    console.log("ssss")
-})
+function setup(){
 
+    canvas.parent("canvas-wrapper");
+
+    background(0)
+}

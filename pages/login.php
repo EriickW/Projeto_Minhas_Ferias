@@ -59,9 +59,9 @@
         include("../components/nav.php")
     ?>
     <main class="container-fluid text-center row">
-        <section class="row">
+        <section class="row d-flex align-items-center justify-content-center">
             <div class="col-md img-login">
-                <img src="../src/img/test.svg" alt="">
+                <img src="../src/img/teacher.svg" alt="">
             </div>
             <div id="form-content" class="col-md">
                 <h1>Olá Professor</h1>

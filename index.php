@@ -62,11 +62,39 @@
         </section>
        
         <section class="container d-flex align-items-center justify-content-between flex-column mt-5">
-         
-          <canvas width="100%"  class="container " border="10px" >
+        <div class="controls">
+          <div class="title">Sketch</div>
+          <div class="type">
+            <input type="radio" name="pen-type" id="pen-pencil" checked>
+            <label for="pen-pencil">
+              <i class="fa fa-pencil"></i>
+            </label>
 
-          </canvas>
-          <button type="submit" class="mt-5 btn-generic" >Enviar</buttom>
+            <input type="radio" name="pen-type" id="pen-brush" checked>
+            <label for="pen-brush">
+              <i class="fa fa-paint-brush"></i>
+            </label>
+          </div>
+
+          <div class="size">
+            <label for="pen-size">Size</label>
+            <input type="range" id="pen-size" min="1" max="50">
+          </div>
+      
+
+         <div class="color">
+          <label for="pen-color">Cor:</label>
+          <input type="color" name="" id="pen-color">
+         </div>
+
+         <div class="actions">
+          <button id="save-canvas"class="mt-5 btn-generic">Enviar</button>
+         </div>
+        </div>
+          <canva id="canvas-wrapper "class="container " border="10px" >
+
+          </canva>
+
           
         </section>
     </main>
