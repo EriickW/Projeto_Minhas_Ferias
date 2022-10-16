@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="./src/styles/main.css">
 
-
+  <script src="src/scripts/main.js" defer></script>
 
     <title>Redação Kids</title>
   </head>
@@ -61,42 +61,19 @@
 
         </section>
        
-        <section class="container d-flex align-items-center justify-content-between flex-column mt-5">
-        <div class="controls">
-          <div class="title">Sketch</div>
-          <div class="type">
-            <input type="radio" name="pen-type" id="pen-pencil" checked>
-            <label for="pen-pencil">
-              <i class="fa fa-pencil"></i>
-            </label>
-
-            <input type="radio" name="pen-type" id="pen-brush" checked>
-            <label for="pen-brush">
-              <i class="fa fa-paint-brush"></i>
-            </label>
-          </div>
-
-          <div class="size">
-            <label for="pen-size">Size</label>
-            <input type="range" id="pen-size" min="1" max="50">
-          </div>
-      
-
-         <div class="color">
-          <label for="pen-color">Cor:</label>
-          <input type="color" name="" id="pen-color">
-         </div>
-
-         <div class="actions">
-          <button id="save-canvas"class="mt-5 btn-generic">Enviar</button>
-         </div>
+        <section class="container">
+        <div id="toolbar">
+            <h1>Draw.</h1>
+            <label for="stroke">Stroke</label>
+            <input id="stroke" name='stroke' type="color">
+            <label for="lineWidth">Line Width</label>
+            <input id="lineWidth" name='lineWidth' type="number" value="5">
+            <button id="clear">Clear</button>
         </div>
-          <canva id="canvas-wrapper "class="container " border="10px" >
-
-          </canva>
-
-          
-        </section>
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+    </section>
     </main>
 
 

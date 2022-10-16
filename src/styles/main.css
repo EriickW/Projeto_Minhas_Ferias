@@ -250,6 +250,11 @@ nav #nav-content ul li a:hover {
   text-align: right;
 }
 
+.main-inicio .drawing-board {
+  width: 100%;
+  height: 100vh;
+}
+
 #login {
   min-height: 100vh;
   margin-inline: auto;
