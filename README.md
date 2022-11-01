@@ -29,7 +29,14 @@ Lider da Empresa: Erick Willian
     - O site será feito em uma única página que nela ira conter um espaço para que a criança escreva seu texto usando o mouse (Para isso será usado a tag html canva), e uma área para que ela possa contar através de um audio como foi suas ferias
 - **Regras de negócio**: 
     - Teremos que fazer o site de forma que fique responsivo para qualquer plataforma (Computador,tablet,celuar)
-    - Fazer com que as crianças **escrevam** com o mouse (no caso de computadores), com caneta ou com o dedo (no caso de celulares e tablets)  
+    - Fazer com que as crianças **escrevam** com o mouse (no caso de computadores), com caneta ou com o dedo (no caso de celulares e tablets) 
+    
+    
+    https://lottiefiles.com/53882-distance-education // img cadastro
+    
+    
+    https://lottiefiles.com/80356-online-learning // img login
+    
 - **Acessibilidade** :
     - Terá um espaço para que elá consiga mandar um áudio contando como fo suas férias
 
