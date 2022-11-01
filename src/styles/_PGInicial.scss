@@ -1,26 +1,14 @@
 #index{
-    .btn-generic{
-        background: transparent;
-        padding: 5px 30px;
-        border:2px solid var(--cor-destaque-button);
-        border-radius: 3px;
-        color:var(--cor-destaque-button);
-        font-weight: 600;
-        transition: all 0.5s ease-in-out;
-    }
-    .btn-generic:hover{
-        background: var(--cor-destaque-button);
-        color: white;
-    }
+
     header{
         width: 100%;
         height: 100vh;
         z-index: 1;
             .header-content{
-                max-width:500px ;
+                max-width:550px ;
                 width: 100%;
                 h1{
-                    font-size: 70px;
+                    font-size: 100px;
                 }
                 h2{
                     font-size: 40px;  
@@ -30,7 +18,9 @@
                     color: var(--cor-destaque-text);
                     font-weight: 700;
                 }
-                
+                p{
+                    font-size: 18px;
+                }
      
             }
         .arrow{
@@ -51,7 +41,6 @@
         
         border-radius: 50%;
         z-index: -2;
-        overflow: hidden;
     }
     .forma-top{
         top:-150px;
@@ -64,9 +53,7 @@
         background: #2E97F2;
         
     }
-    canvas{
-        border:1px solid black;
-    }
+
 }
 
 

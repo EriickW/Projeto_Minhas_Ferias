@@ -25,8 +25,11 @@ p {
 }
 
 body {
-  overflow-x: hidden;
   position: relative;
+}
+
+body#index {
+  overflow: hidden;
 }
 
 #areaProfessor h1, #areaProfessor h2, #areaProfessor h3, #areaProfessor h4, #areaProfessor h5 {
@@ -35,6 +38,30 @@ body {
 
 #areaProfessor p, #areaProfessor a {
   font-family: 'Poppins', cursive;
+}
+
+.btn-generic {
+  background: transparent;
+  padding: 5px 30px;
+  border: 2px solid var(--cor-destaque-button);
+  border-radius: 3px;
+  color: var(--cor-destaque-button);
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-generic:hover {
+  background: var(--cor-destaque-button);
+  color: white;
+}
+
+label {
+  font-size: 20px;
+}
+
+form button {
+  margin-top: 20px;
 }
 
 nav {
@@ -88,22 +115,6 @@ nav #nav-content ul li a:hover {
   border-bottom: 1px solid var(--cor-destaque-text);
 }
 
-#index .btn-generic {
-  background: transparent;
-  padding: 5px 30px;
-  border: 2px solid var(--cor-destaque-button);
-  border-radius: 3px;
-  color: var(--cor-destaque-button);
-  font-weight: 600;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-#index .btn-generic:hover {
-  background: var(--cor-destaque-button);
-  color: white;
-}
-
 #index header {
   width: 100%;
   height: 100vh;
@@ -111,12 +122,12 @@ nav #nav-content ul li a:hover {
 }
 
 #index header .header-content {
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
 }
 
 #index header .header-content h1 {
-  font-size: 70px;
+  font-size: 100px;
 }
 
 #index header .header-content h2 {
@@ -127,6 +138,10 @@ nav #nav-content ul li a:hover {
   font-family: var(--font);
   color: var(--cor-destaque-text);
   font-weight: 700;
+}
+
+#index header .header-content p {
+  font-size: 18px;
 }
 
 #index header .arrow {
@@ -144,7 +159,6 @@ nav #nav-content ul li a:hover {
   height: 500px;
   border-radius: 50%;
   z-index: -2;
-  overflow: hidden;
 }
 
 #index .forma-top {
@@ -159,12 +173,8 @@ nav #nav-content ul li a:hover {
   background: #2E97F2;
 }
 
-#index canvas {
-  border: 1px solid black;
-}
-
 .main-inicio h1 {
-  font-size: 70px;
+  font-size: 100px;
 }
 
 .main-inicio h2 {
@@ -175,84 +185,6 @@ nav #nav-content ul li a:hover {
   font-family: var(--font);
   color: var(--cor-destaque-text);
   font-weight: 700;
-}
-
-.main-inicio #mic {
-  background: #ff7676;
-  color: white;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  font-size: 35px;
-  border: 1px solid #f05858;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.main-inicio #mic:hover {
-  background: #f11f1f;
-}
-
-.main-inicio .comecar-content {
-  z-index: 2;
-  max-width: 500px;
-}
-
-.main-inicio a {
-  cursor: pointer;
-}
-
-.main-inicio section .controls {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #ddd;
-  padding: 0 10px;
-  width: 100%;
-  gap: 10px;
-}
-
-.main-inicio section .controls .type input {
-  display: none;
-}
-
-.main-inicio section .controls .type label {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  text-align: center;
-  line-height: 30px;
-  margin: 0px 2px;
-  cursor: pointer;
-}
-
-.main-inicio section .controls .type input:checked + label {
-  background: #000;
-  color: #eee;
-  border-radius: 50%;
-}
-
-.main-inicio section .controls .size input {
-  height: 10px;
-}
-
-.main-inicio section .controls .actions {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: right;
-}
-
-.main-inicio .drawing-board {
-  width: 100%;
-  height: 100vh;
 }
 
 #login {

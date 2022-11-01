@@ -13,12 +13,12 @@
 
 
 
-    <link rel="stylesheet" href="../src/styles/professor.css">
+    <link rel="stylesheet" href="../styles/professor.css">
 
 
 
 
-    <script type="module"src="../src/scripts/main.js" defer></script>
+    <script type="module"src="../scripts/main.js" defer></script>
     <title>Area do Professor</title>
 </head>
 <body id="areaProfessor"class="light d-grid d-flex  gap-3">

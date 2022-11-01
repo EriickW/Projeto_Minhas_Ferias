@@ -23,9 +23,12 @@ p{
 }
 body{
   
-    overflow-x:hidden;
+   
     position: relative;
     
+}
+body#index {
+    overflow:hidden;
 }
 #areaProfessor{
     h1,h2,h3,h4,h5{
@@ -34,6 +37,27 @@ body{
     p,a{
         font-family: 'Poppins', cursive;
     }
+}
+.btn-generic{
+    background: transparent;
+    padding: 5px 30px;
+    border:2px solid var(--cor-destaque-button);
+    border-radius: 3px;
+    color:var(--cor-destaque-button);
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-generic:hover{
+    background: var(--cor-destaque-button);
+    color: white;
+}
+
+label{
+    font-size: 20px;
+}
+form button{
+    margin-top: 20px;
 }
 @import "navInicial";
 @import "PGInicial";

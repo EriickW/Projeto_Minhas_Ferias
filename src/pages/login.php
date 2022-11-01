@@ -1,6 +1,6 @@
 <?php
 
-    include('../src/db/connect.php');
+    include('../db/connect.php');
 
 
     if(isset($_POST['email']) || isset($_POST['senha'])){
@@ -46,7 +46,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
     <main class="container-fluid text-center row">
         <section class="row d-flex align-items-center justify-content-center">
             <div class="col-md img-login">
-                <img src="../src/img/teacher.svg" alt="">
+                <img src="../img/teacher.svg" alt="">
             </div>
             <div id="form-content" class="col-md">
                 <h1>Olá Professor</h1>
@@ -74,7 +74,7 @@
                     </div>
                     <input id="submit"type="submit" placeholder="Entrar">
                 </form>
-                <a href="#">Não tenho conta</a>
+                <a href="./cadastro.php">Não tenho conta</a>
             </div>
         </section>
     </main>

@@ -33,7 +33,7 @@
   <body role="body" id="index">
    
     <?php
-    include("components/nav.php");
+    include("src/components/nav.php");
     ?>
 
     <header aria-label="Cabeçalho da página." class="container-fluid d-flex align-items-center justify-content-center flex-column position-relative">
@@ -43,37 +43,12 @@
         <div class="container header-content text-center">
             <h1 class="text-uppercase">Redação Kids</h1>
             <p role="text">Aqui você pode fazer sua redação sobre suas férias, basta apenas usar o mouse para escrever ou mandar um audio contando como foi suas férias</p>
-            <button type="button" class="btn-generic">Começar</button>
+            <a href="src/pages/verificacaoDeficiencia.php"><button type="button" class="btn-generic">Fazer Redação</button></a>
         </div>
-        <img class="arrow container "src="src/img/arrow.png"  alt="">
         <div class="forma forma-bot">
-
        </div>
     </header>
-    <main class="main-inicio container-fluid">
-        <section class="comecar container d-flex align-items-center justify-content-between flex-wrap">
-          <div class="comecar-content">
-            <h2>Começar:</h2>
-            <p>Escreva ou conte como foi suas férias, escrevendo no quadro abaixo ou mandando um audio apertando o botão com um microfone</p>
-          </div>
-          
-          <button class="text-center" id="mic"><ion-icon name="mic-outline"></ion-icon></button>
 
-        </section>
-       
-        <section class="container">
-        <div id="toolbar">
-            <h1>Draw.</h1>
-            <label for="stroke">Stroke</label>
-            <input id="stroke" name='stroke' type="color">
-            <label for="lineWidth">Line Width</label>
-            <input id="lineWidth" name='lineWidth' type="number" value="5">
-            <button id="clear">Clear</button>
-        </div>
-        <div class="drawing-board">
-            <canvas id="drawing-board"></canvas>
-        </div>
-    </section>
     </main>
 
 
