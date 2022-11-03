@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
@@ -47,11 +43,11 @@
         </div>
         <div class="row buttons">
           <button class="clear-canvas">Limpar folha</button>
-          <button class="save-img">Salvar</button>
+          
           <form action="./enviar.php" method="post">
 
-          
-          <input type="file" name="img" id="imageCanvas" value="">
+          <button class="save-img">Salvar</button>
+          <input type="img" name="img" id="imageCanvas" value="">
           </form>
           
         </div>

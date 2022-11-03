@@ -87,10 +87,12 @@ clearCanvas.addEventListener("click", () => {
 
 
 saveImg.addEventListener("click", () => {
-    const link = document.createElement("img");  // criando o elemento <a>
-    //link.download = `${Date.now()}.jpg`; // passando a data atual como valor de download do link
-    link.src = canvas.toDataURL("image/jpeg"); // passando canvasData como valor de link href
-    // link.click(); // clicking link to download image
+    const link = document.createElement("a");  // criando o elemento <a>
+    link.download = `${Date.now()}.jpg`; // passando a data atual como valor de download do link
+    link.href = canvas.toDataURL("image/jpeg"); // passando canvasData como valor de link href
+    // link.click(); // clicar para baixar a imagem
+
+
     imageCanvas.value = link;
     console.log(link);
 });
