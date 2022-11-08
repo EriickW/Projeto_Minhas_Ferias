@@ -24,16 +24,16 @@
 
 
 
-    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 
-  <script src="src/scripts/main.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 
     <title>Redação Kids</title>
   </head>
   <body role="body" id="index">
    
     <?php
-    include("src/components/nav.php");
+    include("components/nav.php");
     ?>
 
     <header aria-label="Cabeçalho da página." class="container-fluid d-flex align-items-center justify-content-center flex-column position-relative">
@@ -43,7 +43,7 @@
         <div class="container header-content text-center">
             <h1 class="text-uppercase">Redação Kids</h1>
             <p role="text">Aqui você pode fazer sua redação sobre suas férias, basta apenas usar o mouse para escrever ou mandar um audio contando como foi suas férias</p>
-            <a href="src/pages/verificacaoDeficiencia.php"><button type="button" class="btn-generic">Fazer Redação</button></a>
+            <a href="pages/verificacaoDeficiencia.php"><button type="button" class="btn-generic">Fazer Redação</button></a>
         </div>
         <div class="forma forma-bot">
        </div>
