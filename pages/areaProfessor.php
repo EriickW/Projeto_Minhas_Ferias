@@ -28,9 +28,6 @@
 
     <!-- ========================== ASIDE ======================== -->
 <?php
-
-    session_start();
-    require_once("../db/protect.php");
     include("../components/aside.php");
 
 ?>

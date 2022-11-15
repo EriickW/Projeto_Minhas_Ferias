@@ -1,15 +1,19 @@
 <?php
 
-
 $email = $_POST['email'];
 $senha = $_POST['senha'];
       
-        $pont = fopen("../db/login.txt", "r");
+        
 
       
 
     $emailAndSenha = "$email,$senha";
-        $linhas = 0; // Número inicial de linhas contadas
+      
+        
+
+        $pont = fopen("../db/login.txt", "a+");
+        fwrite($pont, $emailAndSenha . "\n");
+        fwrite($pont, "\r \n \n","1000");
 
         $file = file_get_contents('../db/login.txt');
         $lines = explode("\n", $file);
@@ -19,16 +23,11 @@ $senha = $_POST['senha'];
             if( $emailAndSenha == $line){
                 header("location: ../pages/areaProfessor.php");
             }else{
-                echo "Email não cadastrado  <a href='../cadastrar.php'>Cadastrar</a>";
+                echo "Não foi possivel realizar o cadastro  <a href='../cadastrar.php'>Cadastrar</a>";
             }
 
         }
         fclose($pont);
 
 
-
-    
-
 ?>
-
-

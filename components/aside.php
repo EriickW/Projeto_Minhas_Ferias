@@ -20,7 +20,7 @@
 
                    <li class="  p-2"><a  class="list-group-item list-group-item-action active" href="../../index.php">Fazer Redação</a></li>
 
-                   <a  class="list-group-item list-group-item-action active"href="pages/logout.php" id="sair">Sair</a>
+                   <a  class="list-group-item list-group-item-action active"href="../pages/loginPage.php" id="sair">Sair</a>
                </ul>
            </nav>
            
