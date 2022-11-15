@@ -32,7 +32,7 @@
                     <div>
                         <input type="password" id="senha" name="senha" placeholder="Senha" required>
                     </div>
-                    <input id="submit"type="submit" placeholder="Entrar">
+                    <input id="submit"type="submit" value="Entrar">
                 </form>
                 <a href="./cadastro.php">Não tenho conta</a>
             </div>
