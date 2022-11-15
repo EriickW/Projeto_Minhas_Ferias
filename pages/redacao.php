@@ -44,10 +44,10 @@
         <div class="row buttons">
           <button class="clear-canvas">Limpar folha</button>
           
-          <form action="./enviar.php" method="post">
+          <form action="./enviar.php" method="post" enctype="multipart/form-data">
 
-          <button class="save-img">Salvar</button>
-          <input type="img" name="img" id="imageCanvas" value="">
+          <button type="submit"class="save-img">Salvar</button>
+          <input type="url" name="img" id="imageCanvas" value="">
           </form>
           
         </div>
