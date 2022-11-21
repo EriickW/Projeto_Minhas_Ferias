@@ -2,14 +2,20 @@
 nav{
     z-index: 5;
     height: 100px;
-
+    
     #nav-content{
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        .logo{
+            text-decoration: none;
+            color: var(--cor-destaque-text);
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s ease-in-out;
+            font-weight: 700;
+        }
 
         ul{
             height: 100%;

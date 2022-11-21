@@ -5,7 +5,7 @@
        
        <div class="d-flex flex-column justify-content-center align-items-center mt-5" style="width:100%;">
            <div  class="mb-3 rounded-circle"style="background:gray;width:90px;height:90px;" ></div>
-           <h5>Erick</h5>
+           <h5>Professor</h5>
        </div>
        <div class="mt-4 text-center "style="width:100%;height:100%;">
            <nav style="height: 100%;width:150px;">

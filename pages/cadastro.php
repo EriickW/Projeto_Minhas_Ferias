@@ -21,7 +21,7 @@
     <main class="container-fluid text-center row">
         <section class="row d-flex align-items-center justify-content-center">
             <div class="col-md img-login">
-                <img src="../img/teacher.svg" alt="">
+                <img src="../img/cadastro.svg" alt="">
             </div>
             <div id="form-content" class="col-md">
                 <h1>Vire Professor</h1>
