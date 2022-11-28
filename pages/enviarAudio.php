@@ -6,7 +6,7 @@ print_r($texto);
     $pont = fopen("../db/ferias.txt", "a+");
 
     fwrite($pont,$texto);
-    fwrite($pont, "\r \n \n","1000");
+    fwrite($pont, "\n","1000");
 
     fclose($pont);  
 ?>

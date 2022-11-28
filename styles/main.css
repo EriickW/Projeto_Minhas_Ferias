@@ -20,6 +20,22 @@
   --cor-hover:#1774b3;
 }
 
+body a.logo {
+  text-decoration: none;
+  color: var(--cor-destaque-text);
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body a.logo:hover {
+  text-decoration: none;
+  color: var(--cor-destaque-text);
+  border-bottom: 1px solid var(--cor-destaque-text);
+}
+
 p {
   font-family: 'Poppins', cursive;
 }
@@ -100,7 +116,7 @@ nav #nav-content ul {
   font-family: var(--font);
 }
 
-nav #nav-content ul li a {
+nav #nav-content ul a {
   text-decoration: none;
   color: var(--cor-destaque-text);
   border-bottom: 1px solid transparent;
@@ -109,7 +125,7 @@ nav #nav-content ul li a {
   font-weight: 700;
 }
 
-nav #nav-content ul li a:hover {
+nav #nav-content ul a:hover {
   text-decoration: none;
   color: var(--cor-destaque-text);
   border-bottom: 1px solid var(--cor-destaque-text);

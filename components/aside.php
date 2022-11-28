@@ -12,13 +12,13 @@
                <ul classs="list-group list-group-flush "style="padding:0;">
                    <li class="p-2"><a class="list-group-item list-group-item-action active" href="../pages/areaProfessor.php" >Página inicial</a></li>
 
-                   <li class=" p-2"><a  class="list-group-item list-group-item-action active" href="../pages/redacoes.php">Redações</a></li>
+                   <li class=" p-2"><a  class="list-group-item list-group-item-action active" href="../pages/lerRedacoes.php">Redações</a></li>
 
-                   <li class="  p-2"><a  class="list-group-item list-group-item-action active" href="../pages/contatos.php"> Contatos</a></li>
+                   <li class="  p-2"><a  class="list-group-item list-group-item-action active" href="../pages/redacoesDeficientes.php">Audios</a></li>
 
                    <li class=" p-2"><a  class="list-group-item list-group-item-action active" href="../pages/config.php">Configurações</a></li>
 
-                   <li class="  p-2"><a  class="list-group-item list-group-item-action active" href="../../index.php">Fazer Redação</a></li>
+                   <li class="  p-2"><a  class="list-group-item list-group-item-action active" href="../pages/home.php">Fazer Redação</a></li>
 
                    <a  class="list-group-item list-group-item-action active"href="../pages/loginPage.php" id="sair">Sair</a>
                </ul>

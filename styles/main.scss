@@ -19,11 +19,20 @@
   
 }
 //
-body#cadastro{
-    --cor-destaque-text:#00BFA6;
-    --cor-destaque-button:#00BFA6;
-    --cor-destaque1:#00BFA6;
-    --cor-hover:#0ca08c;
+body{
+    a.logo{
+        text-decoration: none;
+        color: var(--cor-destaque-text);
+        border-bottom: 1px solid transparent;
+        transition: all 0.5s ease-in-out;
+        font-weight: 700;
+        cursor:pointer;
+    }
+     a.logo:hover{
+        text-decoration: none;
+        color: var(--cor-destaque-text);
+        border-bottom: 1px solid var(--cor-destaque-text);
+    }
 }
 
 p{

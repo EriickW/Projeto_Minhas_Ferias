@@ -47,7 +47,7 @@
           <form action="./enviar.php" method="post" enctype="multipart/form-data">
 
           <button type="submit"class="save-img">Salvar</button>
-          <input type="url" name="img" id="imageCanvas" value="">
+          <input type="text" name="img" id="imageCanvas" value="">
           </form>
           
         </div>

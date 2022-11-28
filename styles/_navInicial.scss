@@ -9,13 +9,7 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            text-decoration: none;
-            color: var(--cor-destaque-text);
-            border-bottom: 1px solid transparent;
-            transition: all 0.5s ease-in-out;
-            font-weight: 700;
-        }
+        
 
         ul{
             height: 100%;
@@ -26,19 +20,19 @@ nav{
             list-style: none;
             font-size: 20px;
             font-family: var(--font);
-
-            li a{
+            a{
                 text-decoration: none;
                 color: var(--cor-destaque-text);
                 border-bottom: 1px solid transparent;
                 transition: all 0.5s ease-in-out;
                 font-weight: 700;
             }
-            li a:hover{
+             a:hover{
                 text-decoration: none;
                 color: var(--cor-destaque-text);
                 border-bottom: 1px solid var(--cor-destaque-text);
             }
+          
         }
     }
 }
