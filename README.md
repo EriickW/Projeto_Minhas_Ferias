@@ -5,7 +5,7 @@ Integrante 1 - 2022.1 : Henry Murillo Lampoglio De Andrade | RGM: 29102936
 Integrante 2 - 2022.2 : Erick Willian Soares Afonso | RGM: 31209521
 
 
-Empresa: FishTechnology
+Empresa: FishTechnology.
 
 Lider da Empresa: Erick Willian
 
